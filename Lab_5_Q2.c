@@ -8,7 +8,7 @@ void main(void)
      P1DIR |= BIT6;             // P1.6 set for output
      P1OUT = 0x00;              // starts LED turned off
      P1SEL |= BIT6;             // select TA0.1 output signal
-     TACCR0 = 62500-1;             // value calculated with clock frequency, delay, and clock divider
+     TACCR0 = 62500-1;             // maximum count value
      TACCTL1 = OUTMOD_7;          // reset/set mode 7 for output signal
      TACCR1 = 6250-1;                // PWM Duty cycle is 10%
      TACTL = TASSEL_2 + ID_3 + MC_1;   // SMCLK and Up Mode and clock divider
