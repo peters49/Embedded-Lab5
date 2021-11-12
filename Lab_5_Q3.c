@@ -1,3 +1,5 @@
+// Code for question 3
+
 #include "msp430G2553.h"
 void main(void)
 {
